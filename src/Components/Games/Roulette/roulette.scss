@@ -1,0 +1,72 @@
+
+.roulette-container {
+    padding: 6vw 0;
+    display: grid;
+    grid-template-columns: 40% 50%;
+    gap: 10%;
+    background-image: linear-gradient(#161616, #353535);
+    .button-container {
+        margin: auto;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-auto-rows: min-content;
+        h2 {
+            text-align: center;
+            font-size: 1.5vw;
+            font-family: 'kanit';
+            font-weight: 700;
+            color: rgb(255, 255, 255);
+        }
+        button {
+            cursor: pointer;
+            transition: 300ms;
+            font-size: 1.5vw;
+            font-family: 'kanit';
+            height: 3vw;
+            font-weight: 700;
+            color: white;
+            background-color: #202020;
+            &:hover {
+                background-color: #353535;
+            }
+            &:nth-child(7) {
+                background-color: #881b22;
+                &:hover {
+                    background-color: #DA2C38;
+                    transition: 300ms;
+                }
+            }
+            &:nth-child(8) {
+                background-color: #161616;
+                &:hover {
+                    background-color: #262626;
+                    transition: 300ms;
+                }
+            }
+            &:nth-child(9) {
+                background-color: #27542e;
+                &:hover {
+                    background-color: #3A7D44;
+                    transition: 300ms;
+                }
+            }
+        }
+    }
+}
+.cls-12{fill:#232323;opacity:0;}
+.cls-14{fill:#fff;}
+
+.needle {
+    margin-bottom: -55px;
+    z-index: 10;
+    position: relative;
+}
+.r-wheel {
+    width: 90%;
+    margin: 2% 5%;
+}
+#spinning-part {
+    transform-origin: 50% 50%;
+    transform: rotate(0deg);
+    transition: 700ms;
+}

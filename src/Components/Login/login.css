@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&display=swap");
+body {
+  height: 40vw;
+}
+
+body::-webkit-scrollbar {
+  width: 0px;
+}
+
+body::-webkit-scrollbar-track {
+  border-radius: px;
+  background: rgba(255, 255, 255, 0);
+}
+
+body::-webkit-scrollbar-track:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0);
+  border-radius: 0px;
+}
+
+body::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0);
+}
+
+.login-container {
+  width: 15vw;
+  margin: 10vw auto;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgb(0, 255, 140);
+  background-color: rgb(27, 27, 27);
+  border-radius: 10px;
+  border-color: rgba(0, 255, 255, 0);
+}
+.login-container h2 {
+  color: rgb(0, 255, 140);
+  margin: 0 0 -2.2vw 1vw;
+  font-family: "kanit";
+  font-weight: 300;
+  font-size: 1.5vw;
+}
+.login-container div {
+  padding: 0 1vw;
+  display: grid;
+  grid-template-columns: auto;
+}
+.login-container input {
+  border-radius: 0px;
+  margin: 2.5vw 0 0 0;
+  background-color: rgb(19, 19, 19);
+  border: none;
+  font-size: 1vw;
+  color: rgb(0, 255, 140);
+  text-align: center;
+  font-family: "kanit";
+  font-weight: 300;
+  font-style: italic;
+  border: rgb(19, 19, 19) 2px solid;
+  box-shadow: 0px 0px 0px rgb(19, 19, 19);
+}
+.login-container input:nth-child(2) {
+  margin: 1vw 0 0 0;
+}
+.login-container input:focus {
+  border-radius: 7px;
+  outline: none !important;
+  box-shadow: 0px 0px 10px rgb(0, 255, 140);
+  transition: 300ms;
+  border-color: rgb(0, 255, 140);
+}
+.login-container .buttons-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1.5vw;
+}
+.login-container .buttons-container .signup, .login-container .buttons-container .submit {
+  background-color: rgb(19, 19, 19);
+  display: block;
+  margin: 1vw 0;
+  font-size: 1vw;
+  padding: 0.2vw 1vw 0.2vw 1vw;
+  border: rgb(19, 19, 19) 2px solid;
+  border-radius: 5px;
+  transition: 300ms;
+  font-family: "kanit";
+  font-weight: 700;
+  font-style: italic;
+  box-shadow: 0px 0px 0px rgb(19, 19, 19);
+  color: rgb(0, 255, 140);
+}
+.login-container .buttons-container .signup:hover, .login-container .buttons-container .submit:hover {
+  box-shadow: 0px 0px 10px rgb(0, 255, 140);
+  transition: 300ms;
+  border-color: rgb(0, 255, 140);
+  cursor: pointer;
+}

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,300;0,600;1,100;1,300;1,600&display=swap");
+.wallet-box {
+  text-align: left;
+  margin: auto;
+  padding: 0;
+}
+
+.print-button {
+  display: block;
+  margin: -8.5vw auto 3vw auto;
+  backdrop-filter: blur(10px);
+  background-color: rgba(17, 17, 17, 0.425);
+  border-radius: 5px;
+  font-size: 3vw;
+  font-family: "Kanit";
+  color: rgb(0, 0, 0);
+  transition: 300ms;
+  padding: 10px 20px 10px 20px;
+  -webkit-text-stroke: 2px;
+  -webkit-text-stroke-color: rgb(0, 255, 140);
+}
+.print-button:hover {
+  -webkit-text-stroke-color: rgba(17, 17, 17, 0);
+  border: solid rgb(0, 255, 140) 2px;
+  color: rgb(0, 255, 140);
+  cursor: pointer;
+  transition: 300ms;
+  box-shadow: rgb(0, 255, 140) 0px 0px 20px;
+  background-color: rgba(34, 34, 34, 0);
+}
+
+.wallet {
+  top: 0;
+  margin-left: 20px;
+  display: inline-block;
+  font-size: 4vw;
+  font-family: "Kanit";
+  font-weight: 700;
+  color: rgb(0, 255, 140);
+  position: sticky;
+  text-shadow: black 0px 0px 20px;
+  z-index: 0s;
+}

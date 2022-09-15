@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import {Wallet} from "./Components/Wallet/Wallet";
+import './app.css'
+import Roulette from "./Components/Games/Roulette/Roulette";
+import { Navigation } from "./Components/Navigation/Navigation";
+import { Login } from "./Components/Login/Login";
+import { useState, useEffect } from 'react'
 
 function App() {
+  const [loggedIn, setLoggedIn] = useState(false)
+  console.log("yippie", loggedIn)
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    {loggedIn === false ? <><Login handleLogin={setLoggedIn} /></> : <><Navigation handleSignout={setLoggedIn} /> <Wallet /></>}
+    </>
   );
 }
 
